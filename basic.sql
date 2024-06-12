@@ -26,6 +26,10 @@ select * from emp_details where city = 'pune'or'Nagpur';
 select * from emp_details where city in ('pune','nagpur');
 select * from emp_details where doj between '2023-01-01' and '2024-04-01';
 select * from emp_details where sex='m' and age>=26;
+
+show databases;
+
+use sql_intro;
 select sex, avg(salary) from emp_details group by sex;
 select * from emp_details order by name desc;
 select length('daman') as city_length;
@@ -34,7 +38,7 @@ select upper(name) from emp_details;
 select curdate();
 select day(curdate());
 select now();
-
+ 
 #string function
 select lower('INDIA') as lower_case;
 select lcase('INDIA') as lower_case;
